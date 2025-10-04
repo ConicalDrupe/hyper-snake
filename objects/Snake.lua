@@ -7,7 +7,7 @@ function Snake:new(x, y, girth)
 	self.girth = girth
 	self.links = {}
 
-	self.speed = 1000
+	self.speed = 400
 	self.velocity = 0
 end
 
