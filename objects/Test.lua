@@ -1,15 +1,9 @@
 local Test = Object:extend()
 
-function Test:new()
+function Test:new() end
 
-end
+function Test:update(dt) end
 
-function Test:update(dt)
-
-end
-
-function Test:draw()
-
-end
+function Test:draw() end
 
 return Test
