@@ -3,8 +3,12 @@ circle = require("objects/Circle")
 Snake = require("objects/Snake")
 SnakeController = require("objects/SnakeController")
 
+Food = require("objects/Food")
+
 function love.load()
-	Snake:new(400, 300, 50)
+	Food:new(200, 200, 10)
+
+	Snake:new(400, 300, 30)
 	SnakeController:new(Snake)
 end
 
@@ -14,4 +18,5 @@ end
 
 function love.draw()
 	Snake:draw()
+	Food:draw()
 end
