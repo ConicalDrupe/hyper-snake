@@ -1,10 +1,12 @@
+Timer = require("libraries/hump/timer")
 Object = require("libraries/classic/classic")
-circle = require("objects/Circle")
+Circle = require("objects/Circle")
 Snake = require("objects/Snake")
 
 Food = require("objects/Food")
 
 function love.load()
+	timer = Timer:new()
 	Food:new(200, 200, 10)
 
 	Snake:new(400, 300, 30)
