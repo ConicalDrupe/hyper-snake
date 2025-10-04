@@ -18,6 +18,7 @@ end
 function Snake:update(dt) end
 
 function Snake:draw()
+	love.graphics.setColor(1, 1, 1)
 	love.graphics.circle("fill", self.x, self.y, self.girth, 100)
 	for _, link in ipairs(self.links) do
 		love.graphics.circle("fill", link.x, link.y, link.girth, 100)
