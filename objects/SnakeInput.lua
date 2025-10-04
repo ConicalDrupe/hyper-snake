@@ -1,11 +1,11 @@
 vector = require("libraries/hump/vector")
-local SnakeController = Object:extend()
+local SnakeInput = Object:extend()
 
-function SnakeController:new(Snake)
+function SnakeInput:new(Snake)
 	self.Snake = Snake
 end
 
-function SnakeController:update(dt)
+function SnakeInput:update(dt)
 	local x, y = love.mouse.getPosition()
 	local mv = vector.new(x, y)
 	local head = vector.new(self.Snake.x, self.Snake.y)
@@ -21,4 +21,4 @@ function SnakeController:update(dt)
 	end
 end
 
-return SnakeController
+return SnakeInput
