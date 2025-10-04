@@ -1,7 +1,6 @@
 Object = require("libraries/classic/classic")
 circle = require("objects/Circle")
 Snake = require("objects/Snake")
-SnakeInput = require("objects/SnakeInput")
 
 Food = require("objects/Food")
 
@@ -13,7 +12,7 @@ function love.load()
 end
 
 function love.update(dt)
-	SnakeInput:update(dt)
+	Snake:update(dt)
 end
 
 function love.draw()

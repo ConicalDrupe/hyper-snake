@@ -15,7 +15,9 @@ function Snake:add()
 	table.insert(self.links, Snake:new(math.random(300, 500), math.random(300, 500), self.girth))
 end
 
-function Snake:update(dt) end
+function Snake:update(dt)
+	SnakeInput:update(dt)
+end
 
 function Snake:draw()
 	love.graphics.setColor(1, 1, 1)
