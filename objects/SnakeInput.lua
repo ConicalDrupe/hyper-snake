@@ -16,8 +16,11 @@ function SnakeInput:update(dt)
 	if mouse_head_distance:len() > self.Snake.girth then
 		local new_dir = mouse_head_distance:normalizeInplace()
 
-		self.Snake.x = self.Snake.x - dt * self.Snake.speed * new_dir.x
-		self.Snake.y = self.Snake.y - dt * self.Snake.speed * new_dir.y
+		-- self.Snake.x = self.Snake.x - dt * self.Snake.speed * new_dir.x
+		-- self.Snake.y = self.Snake.y - dt * self.Snake.speed * new_dir.y
+		local xf = dt * self.Snake.speed * new_dir.x
+		local yf = dt * self.Snake.speed * new_dir.y
+		self.Snake.Body:applyForce(xf, yf)
 	end
 end
 

@@ -1,4 +1,5 @@
 SnakeInput = require("objects/SnakeInput")
+SnakePhysics = require("objects/PhysicsController")
 local Snake = Object:extend()
 
 function Snake:new(x, y, girth)
@@ -17,6 +18,7 @@ end
 
 function Snake:update(dt)
 	SnakeInput:update(dt)
+	SnakePhysics:update(dt)
 end
 
 function Snake:draw()
