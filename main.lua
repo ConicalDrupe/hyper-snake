@@ -1,9 +1,9 @@
 Timer = require("libraries/hump/timer")
 Object = require("libraries/classic/classic")
-Circle = require("objects/Circle")
-Snake = require("objects/Snake")
 
-Food = require("objects/Food")
+Circle = require("game/entities/Circle")
+Snake = require("game/entities/Snake")
+Food = require("game/entities/Food")
 
 function love.load()
 	timer = Timer:new()

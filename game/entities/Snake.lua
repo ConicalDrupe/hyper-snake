@@ -1,4 +1,4 @@
-SnakeInput = require("objects/SnakeInput")
+SnakeInput = require("game/components/InputController")
 local Snake = Object:extend()
 
 function Snake:new(x, y, girth)
